@@ -443,30 +443,29 @@ label {
   top: 0;
 }
 
+.scene-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.scene-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .mask-scroll_screen {
   grid-column-gap: 1.875rem;
   grid-row-gap: 1.875rem;
   color: var(--text-primary);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   flex-flow: column;
   padding: 3.75rem 1.875rem 1.875rem;
   display: flex;
   position: absolute;
   inset: 0;
-}
-
-.mask-scroll_screen.is-1 {
-  background-image: url("assets/ergonomic-1.webp");
-}
-
-.mask-scroll_screen.is-2 {
-  background-image: url("assets/ergonomic-2.webp");
-}
-
-.mask-scroll_screen.is-3 {
-  background-image: url("assets/ergonomic-3.webp");
 }
 
 .scroll-mask_title {
@@ -593,30 +592,11 @@ label {
   width: 100%;
   height: 100%;
   color: var(--text-primary);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   flex-flow: column;
   padding: 3.75rem 1.875rem 1.875rem;
   display: flex;
   position: absolute;
   inset: 0;
-}
-
-.choose_screen.is-1 {
-  background-image: url("assets/choose-1.webp");
-}
-
-.choose_screen.is-2 {
-  background-image: url("assets/choose-2.webp");
-}
-
-.choose_screen.is-3 {
-  background-image: url("assets/choose-3.webp");
-}
-
-.choose_screen.is-4 {
-  background-image: url("assets/choose-4.webp");
 }
 
 .choose_title {
@@ -826,10 +806,6 @@ label {
 .choose_footer {
   z-index: 1;
   color: var(--accent);
-  background-image: url("assets/paper.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   flex-flow: column;
   justify-content: flex-end;
   align-items: center;
@@ -1162,10 +1138,6 @@ label {
 
 .footer_bg {
   z-index: 1;
-  background-image: url("assets/footer.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   inset: 0;
   transform: scale(1.2);
@@ -1679,10 +1651,6 @@ label {
 
 .hero_bg {
   z-index: 0;
-  background-image: url("assets/hero.webp");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: absolute;
   inset: 0;
   overflow: hidden;
@@ -2133,10 +2101,6 @@ label {
       font-size: .875rem;
   }
   
-  .footer_bg {
-    background-image: url("assets/footer-tablet.webp");
-  }
-  
   .footer_title {
     letter-spacing: -.42rem;
       width: 100%;
@@ -2284,38 +2248,6 @@ label {
     margin-left: -1rem;
   }
   
-  .hero_bg {
-    background-image: url("assets/hero-tablet.webp");
-  }
-  
-  .choose_screen.is-1 {
-    background-image: url("assets/choose-1-tablet.webp");
-  }
-  
-  .choose_screen.is-2 {
-    background-image: url("assets/choose-2-tablet.webp");
-  }
-  
-  .choose_screen.is-3 {
-    background-image: url("assets/choose-3-tablet.webp");
-  }
-  
-  .choose_screen.is-4 {
-    background-image: url("assets/choose-4-tablet.webp");
-  }
-  
-  .mask-scroll_screen.is-1 {
-    background-image: url("assets/ergonomic-1-tablet.webp");
-  }
-  
-  .mask-scroll_screen.is-2 {
-    background-image: url("assets/ergonomic-2-tablet.webp");
-  }
-  
-  .mask-scroll_screen.is-3 {
-    background-image: url("assets/ergonomic-3-tablet.webp");
-  }
-  
   .heroTitleLine-mask {
     margin-top: .02em;
   }
@@ -2356,38 +2288,6 @@ label {
   
   h3 {
     font-size: 1.5rem;
-  }
-  
-  .footer_bg {
-    background-image: url("assets/footer-mobile.webp");
-  }
-  
-  .choose_screen.is-1 {
-    background-image: url("assets/choose-1-mobile.webp");
-  }
-  
-  .choose_screen.is-2 {
-    background-image: url("assets/choose-2-mobile.webp");
-  }
-  
-  .choose_screen.is-3 {
-    background-image: url("assets/choose-3-mobile.webp");
-  }
-  
-  .choose_screen.is-4 {
-    background-image: url("assets/choose-4-mobile.webp");
-  }
-  
-  .mask-scroll_screen.is-1 {
-    background-image: url("assets/ergonomic-1-mobile.webp");
-  }
-  
-  .mask-scroll_screen.is-2 {
-    background-image: url("assets/ergonomic-2-mobile.webp");
-  }
-  
-  .mask-scroll_screen.is-3 {
-    background-image: url("assets/ergonomic-3-mobile.webp");
   }
   
   .aboutTitleLine-mask {
@@ -2792,9 +2692,6 @@ label {
     margin-left: -.625rem;
   }
   
-  .hero_bg {
-    background-image: url("assets/hero-mobile.webp");
-  }
 }
 
 .form_inputs-grid > .form_group-title {

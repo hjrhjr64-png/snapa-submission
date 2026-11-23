@@ -6,6 +6,9 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="#faf3ef" name="theme-color"/>
     <meta content="Explore Snapa, a student design project for an instant camera with four photo presets, large-format prints and a companion app for remote shooting." name="description"/>
+    <link rel="canonical" href="https://hjrhjr64-png.github.io/snapa-submission/"/>
+    <meta property="og:url" content="https://hjrhjr64-png.github.io/snapa-submission/"/>
+    <meta property="og:image" content="https://hjrhjr64-png.github.io/snapa-submission/assets/hero.webp"/>
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Snapa — A New Standard for Instant Photography"/>
     <meta property="og:description" content="Explore Snapa, a student design project for an instant camera with four photo presets, large-format prints and a companion app for remote shooting."/>
@@ -42,7 +45,13 @@
           </div>
           <h1 class="hero_title">A new generation instant camera built for people who want better photos and real printed memories</h1>
         </div>
-        <div class="hero_bg"></div>
+        <div class="hero_bg">
+          <picture class="scene-image">
+            <source media="(max-width: 479px)" srcset="assets/hero-mobile.webp"/>
+            <source media="(max-width: 991px)" srcset="assets/hero-tablet.webp"/>
+            <img alt="" fetchpriority="high" src="assets/hero.webp"/>
+          </picture>
+        </div>
       </section>
       <section aria-labelledby="about-title" class="section-about" id="about">
         <div class="about_pin">
@@ -88,14 +97,29 @@
       <section aria-label="Ergonomic design" class="section-mask-scroll" id="ergonomics">
         <div class="mask-scroll_pin">
           <div class="mask-scroll_screen is-1">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/ergonomic-1-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/ergonomic-1-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/ergonomic-1.webp"/>
+            </picture>
             <h2 class="scroll-mask_title">Flat Base + Stability</h2>
             <p class="scroll-mask_sub">A flat base allows the camera to stand securely on tables, shelves, or other flat surfaces.</p>
           </div>
           <div class="mask-scroll_screen is-2">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/ergonomic-2-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/ergonomic-2-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/ergonomic-2.webp"/>
+            </picture>
             <h2 class="scroll-mask_title">Physical Shutter <br/>Button</h2>
             <p class="scroll-mask_sub">A mechanical shutter button with tactile feedback makes every shot feel deliberate.</p>
           </div>
           <div class="mask-scroll_screen is-3">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/ergonomic-3-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/ergonomic-3-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/ergonomic-3.webp"/>
+            </picture>
             <h2 class="scroll-mask_title">Thumb Rest<br/>Built In</h2>
             <p class="scroll-mask_sub">A discreet rear thumb rest improves stability and control during one-handed shooting.</p>
           </div>
@@ -155,11 +179,38 @@
             </div>
             <button aria-label="Next preset" class="choose-next" type="button"></button>
           </div>
-          <div class="choose_screen is-1"></div>
-          <div class="choose_screen is-2"></div>
-          <div class="choose_screen is-3"></div>
-          <div class="choose_screen is-4"></div>
+          <div class="choose_screen is-1">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/choose-1-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/choose-1-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/choose-1.webp"/>
+            </picture>
+          </div>
+          <div class="choose_screen is-2">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/choose-2-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/choose-2-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/choose-2.webp"/>
+            </picture>
+          </div>
+          <div class="choose_screen is-3">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/choose-3-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/choose-3-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/choose-3.webp"/>
+            </picture>
+          </div>
+          <div class="choose_screen is-4">
+            <picture class="scene-image">
+              <source media="(max-width: 767px)" srcset="assets/choose-4-mobile.webp"/>
+              <source media="(max-width: 991px)" srcset="assets/choose-4-tablet.webp"/>
+              <img alt="" loading="lazy" src="assets/choose-4.webp"/>
+            </picture>
+          </div>
           <div class="choose_footer">
+            <picture class="scene-image">
+              <img alt="" loading="lazy" src="assets/paper.webp"/>
+            </picture>
             <div class="choose_footer-text-wrap">
               <div class="footer_text-1">April 2026</div>
               <div class="footer_text-2">Italy</div>
@@ -268,7 +319,13 @@
             </div>
           </div>
         </div>
-        <div class="footer_bg"></div>
+        <div class="footer_bg">
+          <picture class="scene-image">
+            <source media="(max-width: 767px)" srcset="assets/footer-mobile.webp"/>
+            <source media="(max-width: 991px)" srcset="assets/footer-tablet.webp"/>
+            <img alt="" loading="lazy" src="assets/footer.webp"/>
+          </picture>
+        </div>
       </footer>
     </main>
     <dialog aria-labelledby="order-title" class="order popup-order" data-lenis-prevent="" id="order">
