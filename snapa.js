@@ -110,6 +110,18 @@
   const slides = all('.feature-scroll_image-slide');
   const ergo = all('.mask-scroll_screen');
   const photos = all('.choose_screen');
+  // A fully clipped slide can stay lazy until its reveal has already started.
+  const preloadSlides = new IntersectionObserver((entries, observer) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      for (const image of entry.target.querySelectorAll('.scene-image img')) {
+        image.loading = 'eager';
+      }
+      observer.unobserve(entry.target);
+    }
+  }, {rootMargin: '1200px 0px'});
+  preloadSlides.observe($('#ergonomics'));
+  preloadSlides.observe($('#Choose'));
   const names = all('.choose_name');
   const next = $('.choose-next');
   const badges = all('.control_step');
