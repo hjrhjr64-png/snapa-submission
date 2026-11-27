@@ -1253,6 +1253,16 @@ label {
   line-height: 100%;
 }
 
+a.footer_link {
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  a.footer_link:hover {
+    text-shadow: 0 0 3px rgb(255 255 255 / 35%);
+  }
+}
+
 .no-wrap-footer {
   white-space: nowrap;
 }
